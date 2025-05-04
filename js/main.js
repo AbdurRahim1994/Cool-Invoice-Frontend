@@ -176,7 +176,7 @@ function parseJwt(token) {
 
 function handleCredentialResponse(response) {
   const data = parseJwt(response.credential);
-  $("#name").text(data.name);
+  $("#firstName").text(data.name);
   $("#email").text(data.email);
   $("#image").attr("src", data.picture);
   $(".data").css("display", "block");
